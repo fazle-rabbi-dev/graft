@@ -1,0 +1,15 @@
+[package]
+name = "graft"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4", features = ["derive", "env"] }
+anyhow = "1"
+ureq = { version = "3", features = ["rustls"] }
+flate2 = "1"
+tar = "0.4"
+indicatif = "0.17"
+[[bin]]
+name = "graft"
+path = "src/main.rs"
